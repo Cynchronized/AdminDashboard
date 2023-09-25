@@ -69,6 +69,7 @@ h1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 0.75fr 0.75fr;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.15);
 }
 
 .topNav {
@@ -183,6 +184,7 @@ input {
     background-color: var(--nav-bg-1);
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 0 10px 10px rgb(0,0,0,0.10);
 }
 
 .cards .card {
