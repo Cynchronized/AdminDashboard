@@ -9,36 +9,37 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="dashboard logo">
+        <div class="menuItem logo">
             <img src="icons/view-dashboard-custom.png" alt="">
             <h1>Dashboard</h1>
         </div>
         <div class="menuItem">
             <img src="icons/home-custom.png" alt="">
-            <h1>Home</h1>
+            <h1 class="link">Home</h1>
         </div>
         <div class="menuItem">
             <img src="icons/card-account-details-outline-custom.png" alt="">
-            <h1>Profile</h1>
+            <h1 class="link">Profile</h1>
         </div>
         <div class="menuItem">
             <img src="icons/message-custom.png" alt="">
-            <h1>Messages</h1>
+            <h1 class="link">Messages</h1>
         </div>
         <div class="menuItem">
             <img src="icons/clock-custom.png" alt="">
-            <h1>History</h1>
+            <h1 class="link">History</h1>
         </div>
         <div class="menuItem">
             <img src="icons/note-multiple-custom.png" alt="">
-            <h1>Tasks</h1>
+            <h1 class="link">Tasks</h1>
+        </div>
         <div class="menuItem">
             <img src="icons/account-group-custom.png" alt="">
-            <h1>Communities</h1>
+            <h1 class="link">Communities</h1>
         </div>
         <div class="menuItem">
             <img src="icons/cog-custom.png" alt="">
-            <h1>Settings</h1>
+            <h1 class="link">Settings</h1>
         </div>
         <div class="menuItem">
             <img src="icons/help-box-custom.png" alt="">
@@ -48,6 +49,7 @@
             <img src="icons/shield-check-custom.png" alt="">
             <h1>Privacy</h1>
         </div>
+        </div>
     </div>
 
 
@@ -55,7 +57,7 @@
     <div class="navbar">
         <div class="topNav">
             <div class="search">
-                <div class="menuItem">
+                <div class="searchBar">
                     <img src="icons/magnify-custom.png" alt="magnifying glass">
                 </div>
                 <input type="text" name="search">
@@ -64,16 +66,21 @@
                 <div class="menuIcon">
                     <img src="icons/bell-ring-outline-custom.png" alt="">
                 </div>
-                <div class="avatar"></div>
+                <div class="avatar">
+                    <img src="icons/man.png" alt="profile avatar">
+                </div>
                 <p class="name">Austin Thieu</p>
             </div>
         </div>
+
         <div class="botNav">
             <div class="profile">
-                <div class="avatar"></div>
+                <div class="avatar">
+                    <img src="icons/man.png" alt="profile avatar">
+                </div>
                 <div class="profile-name">
                     <p class="greeting">Hi there,</p>
-                    <p class="name">Austin <span class="username">(@cync)</span></p>
+                    <p class="name">Austin Thieu <span class="username">(@austin)</span></p>
                 </div>
             </div>
             <div class="buttons">
@@ -86,7 +93,7 @@
 
     <main class="content">
         <div class="projects">
-            <h3>Your Projects</h3>
+            <h2 class="your-project-title">Your Projects</h2>
             <div class="cards">
                 <div class="card">
                     <h5 class="card-title">Super Cool Project</h5>
@@ -103,8 +110,7 @@
                 <div class="card">
                     <h5 class="card-title">Less Cool Project</h5>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam minima 
-                        laudantium earum vero beatae rerum repellendus voluptatum! Id modi fugiat 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere libero vel cumque dolores ducimus, impedit nesciunt hic et assumenda asperiores eos doloribus aliquam fugit, consequuntur quas, corporis laborum placeat!
                     </p>
                     <div class="icons">
                         <img src="icons/star-plus-outline-custom.png" alt="">
@@ -115,8 +121,7 @@
                 <div class="card">
                     <h5 class="card-title">Impossible App</h5>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam minima 
-                        laudantium earum vero beatae rerum repellendus voluptatum! Id modi fugiat 
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, sequi. Voluptas nostrum perferendis accusamus amet quod animi nemo quia esse excepturi aperiam praesentium voluptates sequi, soluta totam officiis mollitia quibusdam.
                     </p>
                     <div class="icons">
                         <img src="icons/star-plus-outline-custom.png" alt="">
@@ -127,8 +132,7 @@
                 <div class="card">
                     <h5 class="card-title">Easy Peasy App</h5>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam minima 
-                        laudantium earum vero beatae rerum repellendus voluptatum! Id modi fugiat 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe id qui laboriosam voluptatum suscipit autem hic esse ipsa eveniet, modi dolorem consequatur. Provident commodi cupiditate facilis, eaque consectetur voluptas?
                     </p>
                     <div class="icons">
                         <img src="icons/star-plus-outline-custom.png" alt="">
@@ -139,8 +143,7 @@
                 <div class="card">
                     <h5 class="card-title">Ad Blocker</h5>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam minima 
-                        laudantium earum vero beatae rerum repellendus voluptatum! Id modi fugiat 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos ipsam soluta. Dolorem necessitatibus sunt enim veniam esse! Accusamus nihil, asperiores fugiat fugit voluptas quidem quos cupiditate nobis. Et, ut!
                     </p>
                     <div class="icons">
                         <img src="icons/star-plus-outline-custom.png" alt="">
@@ -162,72 +165,78 @@
                 </div>
             </div>
         </div>
+    </main>
 
+    <div class="rightContent">
         <div class="announcements">
-            <ul class="card">
+            <h2 class="announcement-title">Announcements</h2>
+            <ul class="card" id="announcement-card">
                 <li class="announcement">
                     <h5 class="card-title">Site Maintenance</h5>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Officia ea harum vero provident itaque, tempora vel ad et quidem 
-                        ipsa ullam libero beatae, 
-                        iure ducimus eaque quia ex consequatur dolorum!
+                        Officia ea harum vero provident 
                     </p>
                 </li>
                 <li class="announcement">
                     <h5 class="card-title">Community Share Day</h5>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Officia ea harum vero provident itaque, tempora vel ad et quidem 
-                        ipsa ullam libero beatae, 
-                        iure ducimus eaque quia ex consequatur dolorum!
+                        Officia ea harum vero providen
                     </p>
                 </li>
                 <li class="announcement">
                     <h5 class="card-title">Updated Privacy Policy</h5>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Officia ea harum vero provident itaque, tempora vel ad et quidem 
-                        ipsa ullam libero beatae, 
-                        iure ducimus eaque quia ex consequatur dolorum!
+                        Officia ea harum vero pro
                     </p>
                 </li>
             </ul>
         </div>
-
+    
         <div class="trending">
-            <h3>Trending</h3>
-            <ul class="card">
-                <li class="trend trend-1">
-                    <div class="avatar2"></div>
-                    <div class="account">
+            <h2 class="trending-title">Trending</h2>
+            <ul class="card" id="trending-card">
+                <li class="trend">
+                    <div class="trend-avatar">
+                        <img src="icons/user.png" alt="">
+                    </div>
+                    <div class="accounts">
                         <p class="username">@tegan</p>
                         <p class="name card-text">World Peace Builder</p>
                     </div>
                 </li>
-                <li class="trend trend-2">
-                    <div class="avatar"></div>
-                    <div class="account">
+                <li class="trend">
+                    <div class="trend-avatar">
+                        <img src="icons/man.png" alt="">
+                    </div>
+                    <div class="accounts">
                         <p class="username">@cync</p>
                         <p class="name card-text">Super Cool Programmer</p>
                     </div>
                 </li>
-                <li class="trend trend-3">
-                    <div class="avatar3"></div>
-                    <div class="account">
+                <li class="trend">
+                    <div class="trend-avatar">
+                        <img src="icons/woman.png" alt="">
+                    </div>
+                    <div class="accounts">
                         <p class="username">@kendall</p>
                         <p class="name card-text">Life Changing App</p>
                     </div>
                 </li>
-                <li class="trend trend-4">
-                    <div class="avatar4"></div>
-                    <div class="account">
+                <li class="trend">
+                    <div class="trend-avatar">
+                        <img src="icons/man (1).png" alt="">
+                    </div>
+                    <div class="accounts">
                         <p class="username">@alex</p>
-                        <p class="name card-text">No Traffic Maker/p>
+                        <p class="name card-text">No Traffic Maker</p>
                     </div>
                 </li>
             </ul>
         </div>
-    </main>
+    </div>
+
 </body>
 </html>
