@@ -211,6 +211,10 @@ input {
     font-size: 1rem;
 }
 
+.icons img {
+    cursor: pointer;
+}
+
 ul {
     margin-right: 50px;
 }
